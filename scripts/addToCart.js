@@ -40,6 +40,12 @@ const product = [
         image: 'img/products/clay.webp',
         title: 'Romeo Jagonia Jr.',
         price: 69420,
+    },
+    {
+        id: 6,
+        image: 'img/products/clay.webp',
+        title: 'Alvin Gumapac alyas Gangstah',
+        price: 69420,
     }
 ];
 
