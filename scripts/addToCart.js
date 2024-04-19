@@ -45,7 +45,7 @@ const product = [
         id: 6,
         image: 'img/products/clay.webp',
         title: 'Alvin Gumapac alyas Gangstah',
-        price: 69420,
+        price: 500,
     }
 ];
 
