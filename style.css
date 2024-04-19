@@ -1,0 +1,8 @@
+.alert {
+    display: none;
+    margin-top:10px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}

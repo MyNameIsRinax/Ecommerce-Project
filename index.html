@@ -3,9 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PC Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    Test
+    <div class="alert alert-success">
+      <strong>Success!</strong> You bought an item!
+    </div>
+
+  <header>
+    <!-- Jumbotron -->
+    <div class="p-3 text-center bg-white border-bottom">
+      <div class="container">
+        <div class="row gy-3">
+          <!-- Left elements -->
+          <div class="col-lg-2 col-sm-4 col-4">
+            <a href="index.html" target="_blank" class="float-start">
+              <img src="img/logo.png" height="50" />
+            </a>
+          </div>
+          <!-- Left elements -->
+  
+          <!-- Center elements -->
+          <div class="order-lg-last col-lg-10 col-sm-10 col-10 ">
+            <div class="d-flex float-end">
+              <a href="#" class="bg-primary text-white me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#"> <i class="fa fa-user me-md-2"></i> <p class="d-none d-md-block mb-0"> Sign in</p></a>
+              <a href="#" class="bg-primary text-white me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addToCart"> <i class="fa fa-shopping-cart me-md-2"></i><p class="d-none d-md-block mb-0">My cart</p> </a> 
+            </div>
+          </div>
+          <!-- Center elements -->
+        </div>
+      </div>
+    </div>
+  </header>
+    
+    
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner shadow-lg">
+        <div class="carousel-item active">
+            <img src="/img/carousel/1.jpeg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/carousel/2.jpeg" alt="" class="d-block w-100">
+        </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+    
+    <!-- category -->
+    <section>
+      <div class="container pt-5">
+        <nav class="row gy-4">
+          <div class="col-lg-6 col-md-12 ">
+            <div class="row">
+              <div class="col-3">
+                <a href="#" class="text-center d-flex flex-column justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary mx-auto p-3 mb-2" data-mdb-ripple-color="dark">
+                    <i class="fa fa-desktop fa-xl fa-fw"></i>
+                  </button>
+                  <div class="text-dark">Computer Parts</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#" class="text-center d-flex flex-column justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary mx-auto p-3 mb-2" data-mdb-ripple-color="dark">
+                    <i class="fa fa-laptop fa-xl fa-fw"></i>
+                  </button>
+                  <div class="text-dark">Laptops</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#" class="text-center d-flex flex-column justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary mx-auto p-3 mb-2" data-mdb-ripple-color="dark">
+                    <i class="fa fa-mobile fa-xl fa-fw"></i>
+                  </button>
+                  <div class="text-dark">Smartphones</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- category -->
+
+  
+  <!-- Product List -->
+  <div class="container my-6">
+    <div class="container mt-5">
+        <header class="mb-4">
+          <h3><i class="fa fa-fire" aria-hidden="true"></i> New products</h3>
+        </header>
+    <div class="row" id="products"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+<footer class="shadow-lg text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="img/logo.png" height="100" style="padding: 10px;" />
+          <p>
+            A Computer Store, that sells computer stuff obviously.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Computer Parts</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laptops</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Smartphones</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Balay nako</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            secret@secret.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 63 234 567 88</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="">Secret</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+  <!-- Modal -->
+  <div class="modal" id="addToCart">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">My Cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body" id="cart">
+          Your cart is empty :( 
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <b>Total: </b><p id="total">₱0.00</p>
+            <button type="button" class="btn btn-success text-nowrap">Checkout</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <script src="scripts/addToCart.js"></script>
+  <script src="scripts/displayAlert.js"></script>
 </body>
 </html>
+      
