@@ -6,3 +6,60 @@
     transform: translate(-50%, 0);
     z-index: 2;
 }
+
+/*-----Navbar content----*/
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*----category----*/
+.col img + p { 
+    color: black; 
+}
+
+.col img:hover + p { 
+    color: blue; 
+}
+
+.col:hover img {
+    transform: scale(1.1); 
+}
+
+/*-----Grid column Links---*/
+.col-md-2 p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.col-md-2 p a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.col-md-2 p a:hover::after{
+    width: 100%;
+}
+
+/*---------*/
