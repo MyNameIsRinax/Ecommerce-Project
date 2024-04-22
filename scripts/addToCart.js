@@ -62,7 +62,7 @@ const product = [
         price: 70999,
     },
     {
-        id: 4,
+        id: 5,
         image: 'img/products/product6.png',
         title: 'Aspire C24-175',
         description: 
@@ -74,7 +74,7 @@ const product = [
         price: 51999,
     },
     {
-        id: 5,
+        id: 6,
         image: 'img/products/product7.jpg',
         title: 'iMac',
         description: 
@@ -84,18 +84,6 @@ const product = [
         2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
         1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
         price: 84990,
-    },
-    {
-        id: 6,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
-        description: 
-        `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
     },
     {
         id: 7,
@@ -135,6 +123,18 @@ const product = [
     },
     {
         id: 10,
+        image: 'img/products/product9.jpg',
+        title: 'HP Envy 34',
+        description: 
+        `Windows 11 Home
+        NVIDIA® GeForce RTX™ 4090 Laptop GPU
+        Intel® Core™ i9-14900HX Processor
+        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
+        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
+        price: 173047,
+    },
+    {
+        id: 11,
         image: 'img/products/product9.jpg',
         title: 'HP Envy 34',
         description: 
