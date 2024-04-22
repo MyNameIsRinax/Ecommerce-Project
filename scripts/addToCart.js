@@ -152,8 +152,7 @@ const categories = [...new Set(product.map((item) => item))];
 let i = 0;
 
 document.getElementById('products').innerHTML = categories.map((item) => {
-    var { image, title, price } = item;
-    i++;
+    var { id, image, title, price } = item;
     return (
         `
         <div class="col-sm-3 text-center">
@@ -164,8 +163,8 @@ document.getElementById('products').innerHTML = categories.map((item) => {
                     <h5 class="card-title">${title}</h5> 
                     <p class="card-text">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
                     <div class="card-footer pt-3 pb-2">
-                    <button type='button' class='btn btn-primary shadow-0 me-1 buy' onclick='addtocart(${i})'><i class='fa fa-cart-plus'></i> Add to Cart</button>
-                    <button type='button' class='btn btn-primary shadow-0 me-1' onclick='seeMore(${i})'><i class='fa fa-eye'></i></button>
+                    <button type='button' class='btn btn-primary shadow-0 me-1 buy' onclick='addtocart(${id})'><i class='fa fa-cart-plus'></i> Add to Cart</button>
+                    <button type='button' class='btn btn-primary shadow-0 me-1' onclick='seeMore(${id})'><i class='fa fa-eye'></i></button>
                     </div>
                 </div>
             </div>
