@@ -81,8 +81,7 @@ function addtocart(a) {
     displayCart();
 }
 
-function displayCart(a){
-    let j = 0;
+function displayCart(){
     let total = 0;
     if (cart.length==0) {
         document.getElementById('cart').innerHTML = "Your cart is empty :(";
@@ -90,7 +89,7 @@ function displayCart(a){
     else {
         document.getElementById('cart').innerHTML = cart.map((item) =>
         {
-            total = total + item.price;
+            total += item.price;
             var {image, title, price} = item;
 
             return (
