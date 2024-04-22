@@ -247,7 +247,7 @@ section {
 /*-------------*/
 .section-product {
   text-align: center;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .section-product h2 {

@@ -36,7 +36,7 @@
                 <!-- Navbar content -->
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="product.html">Products</a>
@@ -123,12 +123,7 @@
     <div class="row" id="products"></div>
   </div>
 
-  
-<!--Team Section-->
-
-<!-- End Team Section -->
-
-  <!-- Footer -->
+<!-- Footer -->
 <footer class="p-1 text-lg-start bg-body-tertiary text-muted">
   <!-- Section: Links  -->
   <section class="">
@@ -196,7 +191,7 @@
 
 
 
-  <!-- Modal -->
+  <!-- Cart Modal -->
   <div class="modal" id="addToCart">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
@@ -219,6 +214,25 @@
         </div>
   
       </div>
+    </div>
+  </div>
+
+  <!-- See More Modal -->
+  <div class="modal fade" id="seeMore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalProductTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalProductImage" class="img-fluid mx-auto d-block" style="width: 300px; height: 300px; object-fit: cover;" alt="Product Image">
+                <p id="modalProductDescription"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
   </div>
 
