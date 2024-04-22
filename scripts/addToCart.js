@@ -20,7 +20,7 @@ const product = [
     {
         id: 3,
         image: 'img/products/product4.png',
-        title: 'Predator Helios Neo 16 PHN16-72-75Z0',
+        title: 'Predator Helios Neo 16 PHN16-72-72HZ',
         price: 104995,
     },
     {
@@ -43,6 +43,30 @@ const product = [
     },
     {
         id: 6,
+        image: 'img/products/product9.jpg',
+        title: 'HP Envy 34',
+        price: 173047,
+    },
+    {
+        id: 7,
+        image: 'img/products/product9.jpg',
+        title: 'HP Envy 34',
+        price: 173047,
+    },
+    {
+        id: 8,
+        image: 'img/products/product9.jpg',
+        title: 'HP Envy 34',
+        price: 173047,
+    },
+    {
+        id: 9,
+        image: 'img/products/product9.jpg',
+        title: 'HP Envy 34',
+        price: 173047,
+    },
+    {
+        id: 10,
         image: 'img/products/product9.jpg',
         title: 'HP Envy 34',
         price: 173047,
