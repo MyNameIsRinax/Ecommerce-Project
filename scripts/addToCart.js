@@ -149,29 +149,54 @@ const product = [
 
 const categories = [...new Set(product.map((item) => item))];
 
-let i = 0;
+$(document).ready(function () {
+    populateProducts();
+});
 
-document.getElementById('products').innerHTML = categories.map((item) => {
-    var { id, image, title, price } = item;
-    return (
-        `
-        <div class="col-sm-3 text-center">
-            <div class="card w-100 my-2 shadow-sm"  style="width: 18rem; ">
-                <img src="${image}" class="card-img-top" style="aspect-ratio: 1 / 1" alt="${title}"/>
-                <div class="card-body">
-                    <h6><span class="badge bg-danger pt-1">New</span></h6>
-                    <h5 class="card-title">${title}</h5> 
-                    <p class="card-text">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
-                    <div class="card-footer pt-3 pb-2">
-                    <button type='button' class='btn btn-primary shadow-0 me-1 buy' onclick='addtocart(${id})'><i class='fa fa-cart-plus'></i> Add to Cart</button>
-                    <button type='button' class='btn btn-primary shadow-0 me-1' onclick='seeMore(${id})'><i class='fa fa-eye'></i></button>
+function populateProducts() {
+    if ($('#allProducts').length) {
+        populateSection('allProducts', product);
+    }
+    if ($('#recentlyAdded').length) {
+        const recentlyAdded = product.slice(0, 4);
+        populateSection('recentlyAdded', recentlyAdded);
+    }
+    if ($('#recommended').length) {
+        const recommended = getRandomItems(product, 4);
+        populateSection('recommended', recommended);
+    }
+}
+
+function populateSection(sectionId, items) {
+    const section = document.getElementById(sectionId);
+    section.innerHTML = items.map((item) => {
+        const { id, image, title, price } = item;
+        return `
+            <div class="col-sm-3 text-center">
+                <div class="card w-100 my-2 shadow-sm" style="width: 18rem;">
+                    <img src="${image}" class="card-img-top" style="aspect-ratio: 1 / 1" alt="${title}" />
+                    <div class="card-body">
+                        <h6><span class="badge bg-danger pt-1">New</span></h6>
+                        <h5 class="card-title">${title}</h5>
+                        <p class="card-text">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
+                        <div class="card-footer pt-3 pb-2">
+                            <button type='button' class='btn btn-primary shadow-0 me-1 buy' onclick='addtocart(${id})'><i class='fa fa-cart-plus'></i> Add to Cart</button>
+                            <button type='button' class='btn btn-primary shadow-0 me-1' onclick='seeMore(${id})'><i class='fa fa-eye'></i></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>`
-    );
-}).join('');
+            </div>`;
+    }).join('');
+}
 
+function getRandomItems(array, count) {
+    const shuffled = array.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+
+
+// Cart system
 var cart=[];
 
 function addtocart(a) {
