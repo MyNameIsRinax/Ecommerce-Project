@@ -48,7 +48,6 @@
           <!-- Right elements -->
           <div class="col-lg-2 col-sm-4 col-4">
             <div class="d-flex justify-content-end align-items-center">
-              <a href="#" class="bg-primary text-white me-1 border rounded py-2 px-4 nav-link d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#" style="white-space: nowrap;"> <i class="fa fa-user me-md-2"></i> <p class="d-none d-md-block mb-0"> Sign in</p></a>
               <a href="#" class="bg-primary text-white me-1 border rounded py-2 px-4 nav-link d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addToCart" style="white-space: nowrap;"> <i class="fa fa-shopping-cart me-md-2"></i><p class="d-none d-md-block mb-0">My cart</p> </a>
             </div>
           </div>
@@ -116,7 +115,11 @@
               </form>
           </div>
           <div class="col order-5">
-            Second in DOM, with a larger order
+                <div class="container">
+                    <div class="modal-body" id="cart">
+                        Your cart is empty :( 
+                      </div>
+                </div>
           </div>
         </div>
       </div>
@@ -151,12 +154,14 @@
       <!-- Modal footer -->
       <div class="modal-footer">
           <b>Total: </b><p id="total">₱0.00</p>
-          <button type="button" class="btn btn-success text-nowrap">Checkout</button>
+          <button type="button" class="btn btn-success text-nowrap" href="checkout.html">Checkout</button>
       </div>
 
     </div>
   </div>
 </div>
-
+  <!-- Scripts -->
+  <script src="scripts/addToCart.js"></script>
+  <script src="scripts/displayAlert.js"></script>
 </body>
 </html>
