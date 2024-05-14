@@ -235,6 +235,7 @@ const categories = [...new Set(product.map((item) => item))];
 
 $(document).ready(function () {
     populateProducts();
+    loadCart();
 });
 
 function populateProducts() {
@@ -279,12 +280,24 @@ function getRandomItems(array, count) {
 }
 
 
-
 // Cart system
 var cart=[];
 
+function loadCart() {
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+        cart = JSON.parse(storedCart);
+    }
+    displayCart();
+}
+
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
 function addtocart(a) {
     cart.push({...categories[a]});
+    saveCart();
     displayCart();
 }
 
