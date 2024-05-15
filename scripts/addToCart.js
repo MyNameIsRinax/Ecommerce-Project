@@ -149,79 +149,80 @@ const product = [
         price: 119995,
     },
     {
-        id: 11,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        id: 12,
+        image: 'img/products/p13.jpg',
+        title: 'Lenovo ThinkCentre M90a Gen 5 (24″ Intel)',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        Intel® UHD Graphics 770
+        Intel vPro® with 14th Gen Intel® Core™ i7
+        64GB 5600Mhz, DDR5
+        4TB SSD for Intel® UHD Graphics model`,
+        price: 52795,
     },
     {
-        id: 11,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        id: 13,
+        image: 'img/products/p14.jpg',
+        title: 'IdeaCentre AIO 24 Intel Gen 9',
+        description: 
+        `Windows 11 Pro
+        Intel® Core™ i7-13620H
+        Intel® UHD Graphics
+        32GB 2 x DDR5
+        1TB M.2 PCIe SSD
+        Wi-Fi 6 (2 x 2 802.11 ax)`,
+        price: 50955,
+    },
+    {
+        id: 14,
+        image: 'img/products/p15.jpg',
+        title: 'ThinkCentre M90a Pro Gen 4 (27 Inch Intel)',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        Intel vPro® Enterprise with 13th Gen Intel® Core™ i9
+        64GB DDR5
+        Intel® UHD 770
+        2TB M.2 PCIe SSD&`,
+        price: 70074,
     },
     {
-        id: 11,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        id: 15,
+        image: 'img/products/p16.jpg',
+        title: 'Modern AM242TP 1M',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        Intel® Core™ 7 processor 150U (12M Cache, 1.80 GHz up to 5.40 GHz)
+        Intel® Iris® Xe Graphics
+        Max 64GB SO-DIMM DDR5 5200 MHz
+        1x M.2 slots`,
+        price: 55594,
     },
     {
-        id: 11,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        id: 16,
+        image: 'img/products/p17.jpg',
+        title: 'Modern AM242 12M',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        ntel® Core™ i7-1260P
+        Intel® Iris® Xe Graphics
+        2x DDR4 2666/3200MHz SO-DIMMs, up to 64GB
+        1x M.2 SSD (PCIE/SATA auto-switch)`,
+        price: 23500,
     },
     {
-        id: 11,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        id: 17,
+        image: 'img/products/p18.jpg',
+        title: 'PRO AP272P 14M',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        Intel® Core™ i7 processor 14700 (33M Cache, 2.10 GHz up to 5.40 GHz)
+        Intel® UHD Graphics
+        2x DDR5 SO-DIMMs, up to 64GB
+        1x M.2 SSD (PCIE / SATA Auto Switch)`,
+        price: 86054,
     },
     {
-        id: 11,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
-        description: 
-        `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
-    },
-    {
-        id: 11,
+        id: 18,
         image: 'img/products/product9.jpg',
         title: 'HP Envy 34',
         description: 
