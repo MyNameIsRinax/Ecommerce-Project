@@ -14,13 +14,14 @@ const product = [
     {
         id: 1,
         image: 'img/products/p2.jpg',
-        title: "Legion 9i (16', Gen9)",
+        title: "Legion 9i (16', Gen 9)",
         description: 
         `Windows 11 Pro
         Intel® Core™ i9-14900HX
         NVIDIA® GeForce RTX™ 4090 Laptop GPU, 16GB GDDR6 (150W TGP +25W Boost)
         64GB (2x32GB) 5600Mhz Dual Channel DDR5
-        2TB (RAID 0 1TB+1TB) PCIe SSD (Gen 4)`,
+        2TB (RAID 0 1TB+1TB) PCIe SSD (Gen 4)
+        2 x 2 WiFi 7`,
         price: 257745,
     },
     {
@@ -39,111 +40,113 @@ const product = [
     {
         id: 3,
         image: 'img/products/product4.png',
-        title: 'Predator Helios Neo 16 PHN16-72-72HZ',
+        title: 'Predator Helios 16 PH16-72-96H6',
         description: 
-        `Windows 11 Home
-        Intel® Core™ i7-14650HX processor Hexadeca-core
-        NVIDIA® GeForce RTX™ 4060 with 8 GB dedicated memory
-        16" WUXGA (1920 x 1200) 16:10 IPS 165 Hz
+        `Windows 11 Pro
+        Intel® Core™ i9-14900HX processor Tetracosa-core (24 Core™)
+        NVIDIA® GeForce RTX™ 4070 with 8 GB dedicated memory
+        40.6 cm (16") WQXGA (2560 x 1600) 16:10 IPS 240 Hz
         16 GB, DDR5 SDRAM
         1 TB SSD`,
-        price: 104995,
+        price: 132999,
     },
     {
         id: 4,
-        image: 'img/products/product5.png',
-        title: 'Aspire C27-1751',
+        image: 'img/products/p5.png',
+        title: 'ROG Strix G16 (2023) G614JV-N4369W',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 70999,
+        NVIDIA® GeForce RTX™ 4060 Laptop GPU
+        13th Gen Intel® Core™ i7-13650HX Processor
+        QHD+ (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula Display
+        1TB M.2 NVMe™ PCIe® 4.0 SSD storage`,
+        price: 109599,
     },
     {
         id: 5,
-        image: 'img/products/product6.png',
-        title: 'Aspire C24-175',
+        image: 'img/products/p6.png',
+        title: 'ROG Strix G18 (2024) G814JIR-N6083WS',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
+        NVIDIA® GeForce RTX™ 4070 Laptop GPU
         Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 51999,
+        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula Display
+        1TB M.2 NVMe™ PCIe® 4.0 SSD storage`,
+        price: 153450,
     },
     {
         id: 6,
-        image: 'img/products/p7.png',
-        title: 'Aspire C24-1750',
+        image: 'img/products/p7.jpg',
+        title: 'Predator Helios 16 PH16-71-95L8',
         description: 
-        `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 84990,
+        `Windows 11 Home Single Language 64-bit
+        Intel® Core™ i9-13900HX processor Tetracosa-core (24 Core™) 2.20 GHz
+        NVIDIA® GeForce RTX™ 4070 with 8 GB dedicated memory
+        40.6 cm (16") WQXGA (2560 x 1600) 16:10 240 Hz
+        16 GB, DDR5 SDRAM
+        1 TB SSD`,
+        price: 123499,
     },
     {
         id: 7,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        image: 'img/products/p8.jpg',
+        title: 'Predator Helios Neo 16 PHN16-72-99K9',
         description: 
-        `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        `Windows 11 Home Single Language
+        Intel® Core™ i9-14900HX processor Tetracosa-core (24 Core™) 2.20 GHz
+        NVIDIA® GeForce RTX™ 4060 with 8 GB dedicated memory
+        40.6 cm (16") WQXGA (2560 x 1600) 16:10 IPS 165 Hz
+        16 GB, DDR5 SDRAM
+        512 GB SSD`,
+        price: 109249,
     },
     {
         id: 8,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        image: 'img/products/p9.jpg',
+        title: "Legion Pro 7i (16', Gen 9)",
         description: 
-        `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        `Windows 11 Pro
+        14th Gen Intel® Core™ i9-14900HX
+        NVIDIA® GeForce RTX™ 4090 Laptop GPU,16GB GDDR6 (175W), 2040MHz Boost Clock
+        32GB overclocked DDR5 (2 x 16GB 6000MHz)
+        2TB (2 x 1TB) PCIe SSD Gen 4`,
+        price: 216564,
     },
     {
         id: 9,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        image: 'img/products/p10.jpg',
+        title: "Legion Pro 5i (16', Gen 9)",
         description: 
-        `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        `Windows 11 Pro
+        14th Gen Intel® Core™ i9-14900HX
+        NVIDIA® GeForce RTX™ 4070 Laptop GPU 8GB GDDR6 (140W) 2175Mhz Boost Clock
+        32GB (2 x 16GB) 5600Mhz DDR5
+        2 TB (1TB x 1TB) PCIe SSD Gen 4`,
+        price: 114745,
     },
     {
         id: 10,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        image: 'img/products/p11.jpg',
+        title: 'Raider 18 HX A14VHG',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        18” UHD+ (3840x2400), MiniLED, 120Hz
+        2280MHz Boost Clock 175W Maximum Graphics Power with Dynamic Boost. Max. 250W CPU-GPU Power with MSI OverBoost Technology
+        NVIDIA® GeForce RTX™ 4080 Laptop GPU 12GB GDDR6
+        Max 192GB DDR5`,
+        price: 96900,
     },
     {
         id: 11,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        image: 'img/products/p12.png',
+        title: 'Crosshair 16 HX MONSTER HUNTER EDITION D14V',
         description: 
         `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        Intel® Core™ i7 processor HX series (14th Gen)
+        16” QHD+ (2560x1600), 240Hz, IPS-Level
+        NVIDIA® GeForce RTX™ 4060 Laptop GPU 8GB GDDR6 Up to 2370MHz Boost Clock 140W Maximum Graphics Power with Dynamic Boost
+        Max 96GB DDR5-5600`,
+        price: 119995,
     },
     {
         id: 11,
