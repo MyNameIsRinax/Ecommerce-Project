@@ -577,6 +577,25 @@ function filterProducts() {
     populateSection('allProducts', filteredProducts);
 }
 
+// Category in Home Page
+// Function to extract query parameters from URL
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+// Check if there's a 'category' parameter in the URL
+const categoryParam = getQueryParam('category');
+if (categoryParam) {
+    const categorySelect = document.getElementById('categoryOption');
+    for (let option of categorySelect.options) {
+        if (option.value === categoryParam) {
+            option.selected = true;
+            break;
+        }
+    }
+}
+
 // For recommendation product type
 function getRandomItems(array, count) {
     const shuffled = array.sort(() => 0.5 - Math.random());
@@ -652,4 +671,10 @@ function seeMore(id) {
     document.getElementById('modalProductDescription').innerHTML = selectedProduct.description ? 
         `<ul>${selectedProduct.description.split('\n').map(item => `<li>${item.trim()}</li>`).join('')}</ul>` : 
         "No description available.";
+}
+
+function purchaseItems(event) {
+    console.log("hi")
+    event.preventDefault();
+    $('#purchased').modal('show');
 }
