@@ -359,17 +359,139 @@ const product = [
     },
     {
         id: 25,
-        image: 'img/products/p23.jpg',
-        title: 'Nitro VG271 S Widescreen Gaming LCD Monitor',
-        brand: 'acer',
+        image: 'img/products/p26.jpg',
+        title: 'Lenovo Legion Y32p-30 31.5" Monitor',
+        brand: 'lenovo',
         category: 'monitor',
         description: 
-        `Screen: 68.6 cm (27") Full HD (1920 x 1080) 165 Hz
-        Panel Technology: IPS (178°x178°) AMD FreeSync™ Premium certified
-        Inputs: DisplayPort, HDMI
-        Response Time: 1 ms
-        Brightness: 400 cd/m²`,
-        price: 11589,
+        `Panel Size. 31.5 inches. Resolution. 3840 x 2160.
+        Aspect ratio. 32:9. Pixel Pitch. 0.181 mm x 0.181 mm.
+        Dot/Pixel Per Inch (DPI/PPI) 139. Response Time. 0.181 mm x 0.181 mm.
+        Pixel Pitch. 0.2ms (MPRT*), 2ms (Level 4), 3ms (Level 3), 4ms (Level 2), ...
+        Brightness (typical) 400 cd/m2(Peak) 350 cd/m2(Typical) Contrast Ratio (typical)`,
+        price: 39995,
+    },
+    {
+        id: 26,
+        image: 'img/products/p27.jpg',
+        title: 'Lenovo Legion R27q-30 27" Monitor',
+        brand: 'lenovo',
+        category: 'monitor',
+        description: 
+        `Display Size. 27"
+        Response Time. 0.5 ms (MPRT) / 1 ms (Level 4) / 2 ms (Level 3) / 3ms (Level 2) / 4 ms (Level 1)
+        Color Support. 1.07 Billion
+        Refresh Rate. 165Hz (Overclock to 180Hz)
+        Brightness. 350 cd/m² (Typical) / 400 cd/m² (Peak)`,
+        price: 16100,
+    },
+    {
+        id: 27,
+        image: 'img/products/p28.jpg',
+        title: 'MEG 342C QD-OLED',
+        brand: 'msi',
+        category: 'monitor',
+        description: 
+        `Curved: Ir.
+        Panel Type: OLED.
+        Refresh rate: 175 Hz.
+        Response time: 1ms.
+        Contrast ratio: 1000000:1.
+        Brightness: 250cd/m2.
+        Size: 34"
+        Resolution: UWWQHD 3440x1440.`,
+        price: 69995,
+    },
+    {
+        id: 28,
+        image: 'img/products/p29.jpg',
+        title: 'MPG 274URF QD',
+        brand: 'msi',
+        category: 'monitor',
+        description: 
+        `Panel Size: 27-inch
+        Panel Type: Rapid IPS
+        Resolution: 3840x2160 (UHD)
+        Aspect Ratio: 16:9
+        Refresh Rate: 160Hz
+        Response Time: 0.5ms GtG
+        Brightness (typ): 400nits
+        Contrast Ratio: 1000:1`,
+        price: 27895,
+    },
+    {
+        id: 29,
+        image: 'img/products/p30.jpg',
+        title: 'MAG 274QRF QD E2 MONSTER HUNTER EDITION',
+        brand: 'msi',
+        category: 'monitor',
+        description: 
+        `Display Size. 27"
+        Panel Type. IPS-Type LCD
+        Native Resolution. 2560 x 1440
+        Maximum Brightness.	400 nits / cd/m2 (Sustained)
+        HDR Support. No,
+        Bit Depth / Color Support. 8-Bit+FRC (1.07 Billion Colors)`,
+        price: 18995,
+    },
+    {
+        id: 30,
+        image: 'img/products/p31.jpg',
+        title: 'ROG Swift PG329Q',
+        brand: 'rog',
+        category: 'monitor',
+        description: 
+        `Panel Size (inch) : 32
+        Aspect Ratio : 16:9
+        Panel Type : Fast IPS
+        True Resolution : 2560x1440
+        Display Viewing Area (HxV) : 708.48 x 398.52 mm
+        Brightness (Typ.) : 450cd/㎡
+        Brightness (HDR, Peak) : 600 cd/㎡
+        Contrast Ratio (Typ.) : 1000:1
+        Response Time : 1ms(GTG)
+        Display Colors : 1073.7M (10 bit)
+        Refresh Rate (max) : 175Hz`,
+        price: 14267,
+    },
+    {
+        id: 31,
+        image: 'img/products/p32.jpg',
+        title: 'ROG Strix XG259QN',
+        brand: 'rog',
+        category: 'monitor',
+        description: 
+        `Panel Size (inch) : 24.5
+        Aspect Ratio : 16:9
+        Display Surface : Non-Glare
+        Pixel Pitch : 0.2829mm x 0.2802mm
+        Brightness (Typ.) : 400cd/㎡
+        Contrast Ratio (Typ.) : 1000:1
+        Response Time : 1ms(GTG), 0.3ms(min.)
+        Display Colors : 16.7M
+        HDR (High Dynamic Range) Support : HDR10
+        Refresh Rate (max) : 380Hz`,
+        price: 10894,
+    },
+    {
+        id: 32,
+        image: 'img/products/p33.jpg',
+        title: 'ROG Swift Pro PG248QP',
+        brand: 'rog',
+        category: 'monitor',
+        description: 
+        `Panel Size (inch) : 24.1
+        Aspect Ratio : 16:9
+        Display Viewing Area (H x V) : 535.68 x 298.08 mm
+        Resolution : 1920x1080
+        Color Space (sRGB) : 125%
+        Brightness (HDR, Peak) : 400 cd/㎡
+        Contrast Ratio (Typ.) : 1000:1
+        Display Colors : 16.7M
+        Response Time : 0.2ms(GTG)
+        Refresh Rate (Max) : 540Hz
+        HDR (High Dynamic Range) Support : HDR10`,
+        price: 61495,
     }
 ];
 
