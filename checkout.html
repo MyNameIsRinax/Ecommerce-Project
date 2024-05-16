@@ -60,58 +60,57 @@
     <div class="mt-5 container">
         <div class="row">
           <div class="col">
-            <form>
+            <form onsubmit="purchaseItems(event)">
                 <h4 class="mb-1">Your Information</h4>
                 <div class="row py-2">
                     <div class="col">
-                        <input type="first" class="form-control" id="first" placeholder="First Name">
+                        <input type="text" class="form-control" id="first" placeholder="First Name" required>
                     </div>
                     <div class="col">
-                        <input type="last" class="form-control" id="last" placeholder="Last Name">
-                    </div>
-                </div>
-                <div class="row py-2">
-                    <div class="col">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                    <div class="col">
-                        <input type="province" class="form-control" id="province" placeholder="Province">
+                        <input type="text" class="form-control" id="last" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="row py-2">
                     <div class="col">
-                        <input type="city" class="form-control" id="city" placeholder="City">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
                     </div>
                     <div class="col">
-                        <input type="postal" class="form-control" id="exampleInputEmail1" placeholder="Postal code">
+                        <input type="text" class="form-control" id="province" placeholder="Province" required>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col">
+                        <input type="text" class="form-control" id="city" placeholder="City" required>
+                    </div>
+                    <div class="col">
+                        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Postal code" required>
                     </div>
                 </div>
                 <hr>
                 <div class="row mt-2 py-2">
                     <h4>Payment Methods</h4>
                     <div class="custom-control custom-radio">
-                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
                         <label class="custom-control-label" for="credit">Card</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
                         <label class="custom-control-label" for="debit">Debit card</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
                         <label class="custom-control-label" for="paypal">PayPal</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input id="gcash" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <input id="gcash" name="paymentMethod" type="radio" class="custom-control-input" required>
                         <label class="custom-control-label" for="gcash">GCash</label>
                     </div>
                 </div>
                 <hr>
-                <button type="submit" class="mt-2 btn btn-primary">Pay Order</button>
+                <button type="submit" class="my-2 btn btn-primary">Pay Order</button>
                 <div>
                     <small class="text-muted">By clicking "Pay Order" I confirm I have read Privacy Notice and Cookie Notice. I agree to the terms & conditions of the store. "I also accept that the store will process my personal data to manage my order, in accordance with the store's privacy notice"</small>
                 </div>
-            
               </form>
           </div>
           <div class="col order-5">
@@ -164,8 +163,26 @@
     </div>
   </div>
 </div>
-  <!-- Scripts -->
-  <script src="js/Core.js"></script>
-  <script src="js/Alert.js"></script>
+
+<div class="modal fade" id="purchased">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Purchase Successful</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Congratulations! Your purchase was successful.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success-custom" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/Core.js"></script>
+<script src="js/Alert.js"></script>
 </body>
 </html>
