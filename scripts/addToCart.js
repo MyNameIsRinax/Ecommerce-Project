@@ -2,7 +2,7 @@ const product = [
     {
         id: 0,
         image: 'img/products/product1.png',
-        title: 'ROG Strix SCAR 18 (2024) G834',
+        title: 'ROG Strix SCAR 18 G834',
         description: 
         `Windows 11 Home
         NVIDIA® GeForce RTX™ 4090 Laptop GPU
@@ -223,15 +223,100 @@ const product = [
     },
     {
         id: 18,
-        image: 'img/products/product9.jpg',
-        title: 'HP Envy 34',
+        image: 'img/products/p19.jpg',
+        title: 'Aspire C27-1751 All-in-One',
         description: 
-        `Windows 11 Home
-        NVIDIA® GeForce RTX™ 4090 Laptop GPU
-        Intel® Core™ i9-14900HX Processor
-        2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display
-        1TB + 1TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)`,
-        price: 173047,
+        `Windows 11 Home Single Language 64-bit
+        Intel® Core™ i7-1260P processor Dodeca-core
+        8 GB, DDR4 SDRAM
+        256 GB SSD, 1 TB HDD`,
+        price: 67999,
+    },
+    {
+        id: 19,
+        image: 'img/products/p20.jpg',
+        title: 'Aspire C24-1750 All-in-One',
+        description: 
+        `Windows 11 Home Single Language 64-bit
+        Intel® Core™ i5-1240P processor Dodeca-core
+        Intel® Iris® Xe Graphics eligible shared memory
+        8 GB, DDR4 SDRAM
+        256 GB SSD, 1 TB HDD`,
+        price: 43999,
+    },
+    {
+        id: 20,
+        image: 'img/products/p21.jpg',
+        title: 'Aspire C24-1700 All-in-One',
+        description: 
+        `Windows 11 Home Single Language 64-bit
+        Intel® Core™ i3-1215U processor Hexa-core
+        Intel® UHD Graphics shared memory
+        8 GB, DDR4 SDRAM
+        256 GB SSD, 1 TB HDD`,
+        price: 44999,
+    },
+    {
+        id: 21,
+        image: 'img/products/p22.jpg',
+        title: 'Nitro KG251Q Z Widescreen Gaming LCD Monitor',
+        description: 
+        `Screen: 62.2 cm (24.5") Full HD (1920 x 1080) 250 Hz
+        Panel Technology: Vertical Alignment (VA) (178°x178°) AMD FreeSync™ Premium certified, HDR 10
+        Inputs: DisplayPort, HDMI
+        Response Time: 1 ms
+        Brightness: 250 cd/m²`,
+        price: 10395,
+    },
+    {
+        id: 22,
+        image: 'img/products/p23.jpg',
+        title: 'Nitro VG271 S Widescreen Gaming LCD Monitor',
+        description: 
+        `Screen: 68.6 cm (27") Full HD (1920 x 1080) 165 Hz
+        Panel Technology: IPS (178°x178°) AMD FreeSync™ Premium certified
+        Inputs: DisplayPort, HDMI
+        Response Time: 1 ms
+        Brightness: 400 cd/m²`,
+        price: 11589,
+    },
+    {
+        id: 23,
+        image: 'img/products/p24.jpg',
+        title: 'ED320QR S Widescreen LCD Monitor',
+        description: 
+        `Screen: 80 cm (31.5") Full HD (1920 x 1080) 165 Hz
+        Panel Technology: Vertical Alignment (VA) (178°x178°) AMD Free-Sync
+        Inputs: DisplayPort, HDMI
+        Response Time: 1 ms
+        Brightness: 300 cd/m²`,
+        price: 11095,
+    },
+    {
+        id: 24,
+        image: 'img/products/p25.jpg',
+        title: 'Lenovo G24e-20 Gaming Monitor',
+        description: 
+        `Screen Size. 23.8 inch.
+        Brightness. 300 cd/㎡
+        Aspect Ratio. 16:9.
+        Contrast Ratio. 3000:1.
+        Backlight. WLED.
+        Response Time. 1ms (MPRT), 4ms (Level 4), 5ms (Level 3), 6ms (Level 2), 7ms (Level 1), 12ms (off)
+        Panel Type. VA.`,
+        price: 8799,
+    },
+    {
+        id: 25,
+        image: 'img/products/p23.jpg',
+        title: 'Nitro VG271 S Widescreen Gaming LCD Monitor',
+        description: 
+        `Screen: 68.6 cm (27") Full HD (1920 x 1080) 165 Hz
+        Panel Technology: IPS (178°x178°) AMD FreeSync™ Premium certified
+        Inputs: DisplayPort, HDMI
+        Response Time: 1 ms
+        Brightness: 400 cd/m²`,
+        price: 11589,
     }
 ];
 
