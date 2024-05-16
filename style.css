@@ -64,7 +64,7 @@ nav ul li a:hover::after{
 
 /*Team*/
 section {
-    padding: 80px 0;
+    padding: 40px 0;
     overflow: hidden;
   }
   
@@ -201,6 +201,12 @@ section {
 
 
 /*----products-----*/
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #projects{
   padding: 30px 0;
 }
