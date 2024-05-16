@@ -3,6 +3,8 @@ const product = [
         id: 0,
         image: 'img/products/product1.png',
         title: 'ROG Strix SCAR 18 G834',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         NVIDIA® GeForce RTX™ 4090 Laptop GPU
@@ -15,6 +17,8 @@ const product = [
         id: 1,
         image: 'img/products/p2.jpg',
         title: "Legion 9i (16', Gen 9)",
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Pro
         Intel® Core™ i9-14900HX
@@ -28,6 +32,8 @@ const product = [
         id: 2,
         image: 'img/products/p3.jpg',
         title: 'Titan 18 HX A14VIG',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Pro
         Intel® HM770
@@ -41,6 +47,8 @@ const product = [
         id: 3,
         image: 'img/products/product4.png',
         title: 'Predator Helios 16 PH16-72-96H6',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Pro
         Intel® Core™ i9-14900HX processor Tetracosa-core (24 Core™)
@@ -54,6 +62,8 @@ const product = [
         id: 4,
         image: 'img/products/p5.png',
         title: 'ROG Strix G16 (2023) G614JV-N4369W',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         NVIDIA® GeForce RTX™ 4060 Laptop GPU
@@ -66,6 +76,8 @@ const product = [
         id: 5,
         image: 'img/products/p6.png',
         title: 'ROG Strix G18 (2024) G814JIR-N6083WS',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         NVIDIA® GeForce RTX™ 4070 Laptop GPU
@@ -78,6 +90,8 @@ const product = [
         id: 6,
         image: 'img/products/p7.jpg',
         title: 'Predator Helios 16 PH16-71-95L8',
+        brand: 'acer',
+        category: 'laptop',
         description: 
         `Windows 11 Home Single Language 64-bit
         Intel® Core™ i9-13900HX processor Tetracosa-core (24 Core™) 2.20 GHz
@@ -91,6 +105,8 @@ const product = [
         id: 7,
         image: 'img/products/p8.jpg',
         title: 'Predator Helios Neo 16 PHN16-72-99K9',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Home Single Language
         Intel® Core™ i9-14900HX processor Tetracosa-core (24 Core™) 2.20 GHz
@@ -104,6 +120,8 @@ const product = [
         id: 8,
         image: 'img/products/p9.jpg',
         title: "Legion Pro 7i (16', Gen 9)",
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Pro
         14th Gen Intel® Core™ i9-14900HX
@@ -116,6 +134,8 @@ const product = [
         id: 9,
         image: 'img/products/p10.jpg',
         title: "Legion Pro 5i (16', Gen 9)",
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Pro
         14th Gen Intel® Core™ i9-14900HX
@@ -128,6 +148,8 @@ const product = [
         id: 10,
         image: 'img/products/p11.jpg',
         title: 'Raider 18 HX A14VHG',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         18” UHD+ (3840x2400), MiniLED, 120Hz
@@ -140,6 +162,8 @@ const product = [
         id: 11,
         image: 'img/products/p12.png',
         title: 'Crosshair 16 HX MONSTER HUNTER EDITION D14V',
+        brand: 'rog',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         Intel® Core™ i7 processor HX series (14th Gen)
@@ -152,6 +176,8 @@ const product = [
         id: 12,
         image: 'img/products/p13.jpg',
         title: 'Lenovo ThinkCentre M90a Gen 5 (24″ Intel)',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         Intel® UHD Graphics 770
@@ -164,6 +190,8 @@ const product = [
         id: 13,
         image: 'img/products/p14.jpg',
         title: 'IdeaCentre AIO 24 Intel Gen 9',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Pro
         Intel® Core™ i7-13620H
@@ -177,6 +205,8 @@ const product = [
         id: 14,
         image: 'img/products/p15.jpg',
         title: 'ThinkCentre M90a Pro Gen 4 (27 Inch Intel)',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         Intel vPro® Enterprise with 13th Gen Intel® Core™ i9
@@ -189,6 +219,8 @@ const product = [
         id: 15,
         image: 'img/products/p16.jpg',
         title: 'Modern AM242TP 1M',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         Intel® Core™ 7 processor 150U (12M Cache, 1.80 GHz up to 5.40 GHz)
@@ -201,6 +233,8 @@ const product = [
         id: 16,
         image: 'img/products/p17.jpg',
         title: 'Modern AM242 12M',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         ntel® Core™ i7-1260P
@@ -213,6 +247,8 @@ const product = [
         id: 17,
         image: 'img/products/p18.jpg',
         title: 'PRO AP272P 14M',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Windows 11 Home
         Intel® Core™ i7 processor 14700 (33M Cache, 2.10 GHz up to 5.40 GHz)
@@ -225,6 +261,8 @@ const product = [
         id: 18,
         image: 'img/products/p19.jpg',
         title: 'Aspire C27-1751 All-in-One',
+        brand: 'acer',
+        category: 'laptop',
         description: 
         `Windows 11 Home Single Language 64-bit
         Intel® Core™ i7-1260P processor Dodeca-core
@@ -236,6 +274,8 @@ const product = [
         id: 19,
         image: 'img/products/p20.jpg',
         title: 'Aspire C24-1750 All-in-One',
+        brand: 'acer',
+        category: 'laptop',
         description: 
         `Windows 11 Home Single Language 64-bit
         Intel® Core™ i5-1240P processor Dodeca-core
@@ -248,6 +288,8 @@ const product = [
         id: 20,
         image: 'img/products/p21.jpg',
         title: 'Aspire C24-1700 All-in-One',
+        brand: 'acer',
+        category: 'laptop',
         description: 
         `Windows 11 Home Single Language 64-bit
         Intel® Core™ i3-1215U processor Hexa-core
@@ -260,6 +302,8 @@ const product = [
         id: 21,
         image: 'img/products/p22.jpg',
         title: 'Nitro KG251Q Z Widescreen Gaming LCD Monitor',
+        brand: 'acer',
+        category: 'laptop',
         description: 
         `Screen: 62.2 cm (24.5") Full HD (1920 x 1080) 250 Hz
         Panel Technology: Vertical Alignment (VA) (178°x178°) AMD FreeSync™ Premium certified, HDR 10
@@ -272,6 +316,8 @@ const product = [
         id: 22,
         image: 'img/products/p23.jpg',
         title: 'Nitro VG271 S Widescreen Gaming LCD Monitor',
+        brand: 'acer',
+        category: 'laptop',
         description: 
         `Screen: 68.6 cm (27") Full HD (1920 x 1080) 165 Hz
         Panel Technology: IPS (178°x178°) AMD FreeSync™ Premium certified
@@ -284,6 +330,8 @@ const product = [
         id: 23,
         image: 'img/products/p24.jpg',
         title: 'ED320QR S Widescreen LCD Monitor',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Screen: 80 cm (31.5") Full HD (1920 x 1080) 165 Hz
         Panel Technology: Vertical Alignment (VA) (178°x178°) AMD Free-Sync
@@ -296,6 +344,8 @@ const product = [
         id: 24,
         image: 'img/products/p25.jpg',
         title: 'Lenovo G24e-20 Gaming Monitor',
+        brand: 'lenovo',
+        category: 'laptop',
         description: 
         `Screen Size. 23.8 inch.
         Brightness. 300 cd/㎡
@@ -310,6 +360,8 @@ const product = [
         id: 25,
         image: 'img/products/p23.jpg',
         title: 'Nitro VG271 S Widescreen Gaming LCD Monitor',
+        brand: 'acer',
+        category: 'laptop',
         description: 
         `Screen: 68.6 cm (27") Full HD (1920 x 1080) 165 Hz
         Panel Technology: IPS (178°x178°) AMD FreeSync™ Premium certified
@@ -325,6 +377,12 @@ const categories = [...new Set(product.map((item) => item))];
 $(document).ready(function () {
     populateProducts();
     loadCart();
+    filterProducts();
+
+    // Initialize sorting only if the priceOption element exists
+    if ($('#priceOption').length) {
+        filterProducts();
+    }
 });
 
 function populateProducts() {
@@ -361,6 +419,38 @@ function populateSection(sectionId, items) {
                 </div>
             </div>`;
     }).join('');
+}
+
+// Function to sort and filter products
+function filterProducts() {
+    const sortOption = document.getElementById('priceOption').value;
+    const brandOption = document.getElementById('brandOption').value;
+    const categoryOption = document.getElementById('categoryOption').value;
+
+    let filteredProducts = product.slice();
+
+    // Filter by brand
+    if (brandOption !== 'all') {
+        filteredProducts = filteredProducts.filter(item => item.brand === brandOption);
+    }
+
+    // Filter by category
+    if (categoryOption !== 'all') {
+        filteredProducts = filteredProducts.filter(item => item.category === categoryOption);
+    }
+
+    // Sort products
+    if (sortOption === 'highest') {
+        filteredProducts.sort((a, b) => b.price - a.price);
+    } else if (sortOption === 'lowest') {
+        filteredProducts.sort((a, b) => a.price - b.price);
+    } else if (sortOption === 'newest') {
+        filteredProducts.sort((a, b) => b.id - a.id); // Sorting by ID in descending order
+    } else {
+        filteredProducts.sort((a, b) => a.id - b.id); // Default sorting by ID in ascending order
+    }
+
+    populateSection('allProducts', filteredProducts);
 }
 
 function getRandomItems(array, count) {

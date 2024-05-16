@@ -72,30 +72,30 @@
           <h3>Filters</h3>
           <div class="filter-category">
             <label>Sort by</label>
-            <select>
+            <select id="priceOption" onchange="filterProducts()" class="form-control">
               <option value="all">All</option>
-              <option value="available">Newest</option>
-              <option value="available">Highest Price</option>
-              <option value="available">Lowest Price</option>
+              <option value="newest">Newest</option>
+              <option value="highest">Highest Price</option>
+              <option value="lowest">Lowest Price</option>
             </select>
           </div>
           <div class="filter-category">
             <label>Brand</label>
-            <select>
+            <select id="brandOption" onchange="filterProducts()" class="form-control">
               <option value="all">All</option>
-              <option value="Acer">Acer</option>
-              <option value="Legion">Lenovo</option>
-              <option value="MSI">MSI</option>
-              <option value="ROG">ROG</option>
+              <option value="acer">Acer</option>
+              <option value="lenovo">Lenovo</option>
+              <option value="msi">MSI</option>
+              <option value="rog">ROG</option>
             </select>
           </div>
           <div class="filter-category">
             <label>Category</label>
-            <select>
-              <option value="14.5">All</option>
-              <option value="17.3">Laptops</option>
-              <option value="16">Monitor</option>
-              <option value="15.6">Desktop</option>
+            <select id="categoryOption" onchange="filterProducts()" class="form-control">
+              <option value="all">All</option>
+              <option value="laptop">Laptops</option>
+              <option value="monitor">Monitor</option>
+              <option value="desktop">Desktop</option>
             </select>
           </div>
         </div>
@@ -219,8 +219,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="scripts/addToCart.js"></script>
-  <script src="scripts/displayAlert.js"></script>
-  <script src="scripts/hide.js"></script>
+  <script src="js/Core.js"></script>
+  <script src="js/Alert.js"></script>
 </body>
 </html>
