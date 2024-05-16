@@ -1,3 +1,4 @@
+// List of products
 const product = [
     {
         id: 0,
@@ -17,7 +18,7 @@ const product = [
         id: 1,
         image: 'img/products/p2.jpg',
         title: "Legion 9i (16', Gen 9)",
-        brand: 'rog',
+        brand: 'lenovo',
         category: 'laptop',
         description: 
         `Windows 11 Pro
@@ -32,7 +33,7 @@ const product = [
         id: 2,
         image: 'img/products/p3.jpg',
         title: 'Titan 18 HX A14VIG',
-        brand: 'rog',
+        brand: 'msi',
         category: 'laptop',
         description: 
         `Windows 11 Pro
@@ -47,7 +48,7 @@ const product = [
         id: 3,
         image: 'img/products/product4.png',
         title: 'Predator Helios 16 PH16-72-96H6',
-        brand: 'rog',
+        brand: 'acer',
         category: 'laptop',
         description: 
         `Windows 11 Pro
@@ -105,7 +106,7 @@ const product = [
         id: 7,
         image: 'img/products/p8.jpg',
         title: 'Predator Helios Neo 16 PHN16-72-99K9',
-        brand: 'rog',
+        brand: 'acer',
         category: 'laptop',
         description: 
         `Windows 11 Home Single Language
@@ -148,7 +149,7 @@ const product = [
         id: 10,
         image: 'img/products/p11.jpg',
         title: 'Raider 18 HX A14VHG',
-        brand: 'rog',
+        brand: 'msi',
         category: 'laptop',
         description: 
         `Windows 11 Home
@@ -162,7 +163,7 @@ const product = [
         id: 11,
         image: 'img/products/p12.png',
         title: 'Crosshair 16 HX MONSTER HUNTER EDITION D14V',
-        brand: 'rog',
+        brand: 'msi',
         category: 'laptop',
         description: 
         `Windows 11 Home
@@ -177,7 +178,7 @@ const product = [
         image: 'img/products/p13.jpg',
         title: 'Lenovo ThinkCentre M90a Gen 5 (24″ Intel)',
         brand: 'lenovo',
-        category: 'laptop',
+        category: 'desktop',
         description: 
         `Windows 11 Home
         Intel® UHD Graphics 770
@@ -191,7 +192,7 @@ const product = [
         image: 'img/products/p14.jpg',
         title: 'IdeaCentre AIO 24 Intel Gen 9',
         brand: 'lenovo',
-        category: 'laptop',
+        category: 'desktop',
         description: 
         `Windows 11 Pro
         Intel® Core™ i7-13620H
@@ -206,7 +207,7 @@ const product = [
         image: 'img/products/p15.jpg',
         title: 'ThinkCentre M90a Pro Gen 4 (27 Inch Intel)',
         brand: 'lenovo',
-        category: 'laptop',
+        category: 'desktop',
         description: 
         `Windows 11 Home
         Intel vPro® Enterprise with 13th Gen Intel® Core™ i9
@@ -219,8 +220,8 @@ const product = [
         id: 15,
         image: 'img/products/p16.jpg',
         title: 'Modern AM242TP 1M',
-        brand: 'lenovo',
-        category: 'laptop',
+        brand: 'msi',
+        category: 'desktop',
         description: 
         `Windows 11 Home
         Intel® Core™ 7 processor 150U (12M Cache, 1.80 GHz up to 5.40 GHz)
@@ -233,8 +234,8 @@ const product = [
         id: 16,
         image: 'img/products/p17.jpg',
         title: 'Modern AM242 12M',
-        brand: 'lenovo',
-        category: 'laptop',
+        brand: 'msi',
+        category: 'desktop',
         description: 
         `Windows 11 Home
         ntel® Core™ i7-1260P
@@ -247,8 +248,8 @@ const product = [
         id: 17,
         image: 'img/products/p18.jpg',
         title: 'PRO AP272P 14M',
-        brand: 'lenovo',
-        category: 'laptop',
+        brand: 'msi',
+        category: 'desktop',
         description: 
         `Windows 11 Home
         Intel® Core™ i7 processor 14700 (33M Cache, 2.10 GHz up to 5.40 GHz)
@@ -262,7 +263,7 @@ const product = [
         image: 'img/products/p19.jpg',
         title: 'Aspire C27-1751 All-in-One',
         brand: 'acer',
-        category: 'laptop',
+        category: 'desktop',
         description: 
         `Windows 11 Home Single Language 64-bit
         Intel® Core™ i7-1260P processor Dodeca-core
@@ -275,7 +276,7 @@ const product = [
         image: 'img/products/p20.jpg',
         title: 'Aspire C24-1750 All-in-One',
         brand: 'acer',
-        category: 'laptop',
+        category: 'desktop',
         description: 
         `Windows 11 Home Single Language 64-bit
         Intel® Core™ i5-1240P processor Dodeca-core
@@ -289,7 +290,7 @@ const product = [
         image: 'img/products/p21.jpg',
         title: 'Aspire C24-1700 All-in-One',
         brand: 'acer',
-        category: 'laptop',
+        category: 'desktop',
         description: 
         `Windows 11 Home Single Language 64-bit
         Intel® Core™ i3-1215U processor Hexa-core
@@ -303,7 +304,7 @@ const product = [
         image: 'img/products/p22.jpg',
         title: 'Nitro KG251Q Z Widescreen Gaming LCD Monitor',
         brand: 'acer',
-        category: 'laptop',
+        category: 'monitor',
         description: 
         `Screen: 62.2 cm (24.5") Full HD (1920 x 1080) 250 Hz
         Panel Technology: Vertical Alignment (VA) (178°x178°) AMD FreeSync™ Premium certified, HDR 10
@@ -317,7 +318,7 @@ const product = [
         image: 'img/products/p23.jpg',
         title: 'Nitro VG271 S Widescreen Gaming LCD Monitor',
         brand: 'acer',
-        category: 'laptop',
+        category: 'monitor',
         description: 
         `Screen: 68.6 cm (27") Full HD (1920 x 1080) 165 Hz
         Panel Technology: IPS (178°x178°) AMD FreeSync™ Premium certified
@@ -330,8 +331,8 @@ const product = [
         id: 23,
         image: 'img/products/p24.jpg',
         title: 'ED320QR S Widescreen LCD Monitor',
-        brand: 'lenovo',
-        category: 'laptop',
+        brand: 'acer',
+        category: 'monitor',
         description: 
         `Screen: 80 cm (31.5") Full HD (1920 x 1080) 165 Hz
         Panel Technology: Vertical Alignment (VA) (178°x178°) AMD Free-Sync
@@ -345,7 +346,7 @@ const product = [
         image: 'img/products/p25.jpg',
         title: 'Lenovo G24e-20 Gaming Monitor',
         brand: 'lenovo',
-        category: 'laptop',
+        category: 'monitor',
         description: 
         `Screen Size. 23.8 inch.
         Brightness. 300 cd/㎡
@@ -361,7 +362,7 @@ const product = [
         image: 'img/products/p23.jpg',
         title: 'Nitro VG271 S Widescreen Gaming LCD Monitor',
         brand: 'acer',
-        category: 'laptop',
+        category: 'monitor',
         description: 
         `Screen: 68.6 cm (27") Full HD (1920 x 1080) 165 Hz
         Panel Technology: IPS (178°x178°) AMD FreeSync™ Premium certified
@@ -385,6 +386,7 @@ $(document).ready(function () {
     }
 });
 
+// Select a product type then generate them accordingly
 function populateProducts() {
     if ($('#allProducts').length) {
         populateSection('allProducts', product);
@@ -399,6 +401,7 @@ function populateProducts() {
     }
 }
 
+// Generate product cards
 function populateSection(sectionId, items) {
     const section = document.getElementById(sectionId);
     section.innerHTML = items.map((item) => {
@@ -408,7 +411,6 @@ function populateSection(sectionId, items) {
                 <div class="card w-100 my-2 shadow-sm" style="width: 18rem;">
                     <img src="${image}" class="card-img-top" style="aspect-ratio: 1 / 1" alt="${title}" />
                     <div class="card-body">
-                        <h6><span class="badge bg-danger pt-1">New</span></h6>
                         <h5 class="card-title">${title}</h5>
                         <p class="card-text">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
                         <div class="card-footer pt-3 pb-2">
@@ -453,6 +455,7 @@ function filterProducts() {
     populateSection('allProducts', filteredProducts);
 }
 
+// For recommendation product type
 function getRandomItems(array, count) {
     const shuffled = array.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
@@ -462,6 +465,7 @@ function getRandomItems(array, count) {
 // Cart system
 var cart=[];
 
+// Load cart data
 function loadCart() {
     const storedCart = localStorage.getItem('cart');
     if (storedCart) {
@@ -470,24 +474,32 @@ function loadCart() {
     displayCart();
 }
 
+// Save cart data locally
 function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
+// Add product data to cart
 function addtocart(a) {
     cart.push({...categories[a]});
     saveCart();
     displayCart();
 }
 
+// Display and generate products from cart data
 function displayCart(){
     let total = 0;
+
+    // If you have 0 item in the cart
     if (cart.length==0) {
         document.getElementById('cart').innerHTML = "Your cart is empty :(";
     }
+
+    // If you have items in the cart
     else {
         document.getElementById('cart').innerHTML = cart.map((item) =>
         {
+            // Add up every item prices to total amount
             total += item.price;
             var {image, title, price} = item;
 
@@ -501,6 +513,7 @@ function displayCart(){
             
         }).join('');
     }
+    // Update total price
     document.getElementById('total').innerHTML = "₱" + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
 

@@ -34,11 +34,15 @@ nav ul li a:hover::after{
 }
 
 .col img:hover + p { 
-    color: blue; 
+    color: #0D6EFD;
 }
 
 .col:hover img {
     transform: scale(1.1); 
+}
+
+.category {
+  text-decoration: none;
 }
 
 /*-----Grid column Links---*/
