@@ -613,6 +613,7 @@ function loadCart() {
         cart = JSON.parse(storedCart);
     }
     displayCart();
+    displayCheckout();
 }
 
 // Save cart data locally
@@ -657,6 +658,40 @@ function displayCart(){
     // Update total price
     document.getElementById('total').innerHTML = "₱" + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
+
+function displayCheckout(){
+    let total = 0;
+
+    // If you have 0 item in the cart
+    if (cart.length==0) {
+        document.getElementById('checkout').innerHTML = "Your cart is empty :(";
+    }
+
+    // If you have items in the cart
+    else {
+        document.getElementById('checkout').innerHTML = cart.map((item) =>
+        {
+            // Add up every item prices to total amount
+            total += item.price;
+            var {image, title, price} = item;
+
+            return (
+                `<li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div class="d-flex">
+                        <img class="img-responsive" style="width: 100px; aspect-ratio: 1 / 1;" src="${image}" alt=""></div>
+                        <h6 class="my-0">${title}</h6>
+                    </div>
+                    <span class="text-muted">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</span>
+                </li>`
+            );
+            
+        }).join('');
+    }
+    // Update total price
+    document.getElementById('total').innerHTML = "₱" + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
+
+
 
 function seeMore(id) {
     // Show the modal

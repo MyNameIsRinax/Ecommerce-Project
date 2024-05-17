@@ -64,50 +64,51 @@
     <!-- image header -->
     <img src="img/header/head1.png" style="width: 100%;">
     <!-- end of image header -->
-    <div class="section-product">
-      <!-- Product List -->
-      <div class="main-container">
-        <div class="filter-section">
-          <!-- Filters will go here -->
-          <h3>Filters</h3>
-          <div class="filter-category">
-            <label>Sort by</label>
-            <select id="priceOption" onchange="filterProducts()" class="form-control">
-              <option value="all">All</option>
-              <option value="newest">Newest</option>
-              <option value="highest">Highest Price</option>
-              <option value="lowest">Lowest Price</option>
-            </select>
-          </div>
-          <div class="filter-category">
-            <label>Brand</label>
-            <select id="brandOption" onchange="filterProducts()" class="form-control">
-              <option value="all">All</option>
-              <option value="acer">Acer</option>
-              <option value="lenovo">Lenovo</option>
-              <option value="msi">MSI</option>
-              <option value="rog">ROG</option>
-            </select>
-          </div>
-          <div class="filter-category">
-            <label>Category</label>
-            <select id="categoryOption" onchange="filterProducts()" class="form-control">
-              <option value="all">All</option>
-              <option value="laptop">Laptops</option>
-              <option value="monitor">Monitor</option>
-              <option value="desktop">Desktop</option>
-            </select>
+
+    <div class="container mt-4" style="max-width: 100%;">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="filter-section">
+            <!-- Filters will go here -->
+            <h3 style="text-align: center;">Filters</h3>
+            <div class="filter-category">
+              <label style="text-align: left;">Sort by</label>
+              <select id="priceOption" onchange="filterProducts()" class="form-control">
+                <option value="all">All</option>
+                <option value="newest">Newest</option>
+                <option value="highest">Highest Price</option>
+                <option value="lowest">Lowest Price</option>
+              </select>
+            </div>
+            <div class="filter-category">
+              <label style="text-align: left;">Brand</label>
+              <select id="brandOption" onchange="filterProducts()" class="form-control">
+                <option value="all">All</option>
+                <option value="acer">Acer</option>
+                <option value="lenovo">Lenovo</option>
+                <option value="msi">MSI</option>
+                <option value="rog">ROG</option>
+              </select>
+            </div>
+            <div class="filter-category">
+              <label style="text-align: left;">Category</label>
+              <select id="categoryOption" onchange="filterProducts()" class="form-control">
+                <option value="all">All</option>
+                <option value="laptop">Laptops</option>
+                <option value="monitor">Monitor</option>
+                <option value="desktop">Desktop</option>
+              </select>
+            </div>
           </div>
         </div>
-        <div class="container my-10">
-          <!-- Products will go here -->
+        <div class="col">
           <div class="row" id="allProducts"></div>
         </div>
       </div>
     </div>
-     
     
-    <!-- Footer -->
+    
+<!-- Footer -->
 <footer class="p-1 text-lg-start bg-body-tertiary text-muted">
   <!-- Section: Links  -->
   <section class="">

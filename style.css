@@ -37,8 +37,8 @@ nav ul li a:hover::after{
     color: #0D6EFD;
 }
 
-.col:hover img {
-    transform: scale(1.1); 
+.col.category:hover img {
+  transform: scale(1.1); 
 }
 
 .category {
@@ -342,15 +342,6 @@ section {
 .main-container {
   display: flex;
   width: 100%;
-}
-
-.filter-section {
-  width: 20%; 
-  border-right: 1px solid #ccc;
-  padding-right: 20px;
-  margin-right: 20px;
-  height: 525vh; 
-  overflow-y: auto; 
 }
 
 .products-container {
