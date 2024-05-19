@@ -4,7 +4,7 @@ const product = [
         id: 0,
         image: 'img/products/product1.png',
         title: 'ROG Strix SCAR 18 G834',
-        brand: 'rog',
+        brand: 'asus',
         category: 'laptop',
         description: 
         `Windows 11 Home
@@ -63,7 +63,7 @@ const product = [
         id: 4,
         image: 'img/products/p5.png',
         title: 'ROG Strix G16 (2023) G614JV-N4369W',
-        brand: 'rog',
+        brand: 'asus',
         category: 'laptop',
         description: 
         `Windows 11 Home
@@ -77,7 +77,7 @@ const product = [
         id: 5,
         image: 'img/products/p6.png',
         title: 'ROG Strix G18 (2024) G814JIR-N6083WS',
-        brand: 'rog',
+        brand: 'asus',
         category: 'laptop',
         description: 
         `Windows 11 Home
@@ -438,7 +438,7 @@ const product = [
         id: 30,
         image: 'img/products/p31.jpg',
         title: 'ROG Swift PG329Q',
-        brand: 'rog',
+        brand: 'asus',
         category: 'monitor',
         description: 
         `Panel Size (inch) : 32
@@ -458,7 +458,7 @@ const product = [
         id: 31,
         image: 'img/products/p32.jpg',
         title: 'ROG Strix XG259QN',
-        brand: 'rog',
+        brand: 'asus',
         category: 'monitor',
         description: 
         `Panel Size (inch) : 24.5
@@ -477,7 +477,7 @@ const product = [
         id: 32,
         image: 'img/products/p33.jpg',
         title: 'ROG Swift Pro PG248QP',
-        brand: 'rog',
+        brand: 'asus',
         category: 'monitor',
         description: 
         `Panel Size (inch) : 24.1
@@ -522,11 +522,14 @@ function populateProducts() {
 function populateSection(sectionId, items) {
     const section = document.getElementById(sectionId);
     section.innerHTML = items.map((item) => {
-        const { id, image, title, price } = item;
+        const { id, image, brand, title, price } = item;
         return `
             <div class="col-sm-3 text-center">
                 <div class="card w-100 my-2 shadow-sm" style="width: 18rem;">
+                    <div class="position-relative">
+                    <img src="img/brand/${brand}.png" class="card-img-brand position-absolute top-0 start-0" alt="${brand}" />
                     <img src="${image}" class="card-img-top" style="aspect-ratio: 1 / 1" alt="${title}" />
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">${title}</h5>
                         <p class="card-text">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>

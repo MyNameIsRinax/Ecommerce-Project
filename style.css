@@ -383,3 +383,8 @@ section {
 .products-container .product:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.card-img-brand {
+  height: 15px;
+  margin: 15px;
+}
