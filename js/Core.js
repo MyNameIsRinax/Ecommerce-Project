@@ -499,13 +499,8 @@ const categories = [...new Set(product.map((item) => item))];
 
 $(document).ready(function () {
     populateProducts();
-    loadCart();
     filterProducts();
-
-    // Initialize sorting only if the priceOption element exists
-    if ($('#priceOption').length) {
-        filterProducts();
-    }
+    $('#priceOption, #brandOption, #categoryOption').on('change', filterProducts);
 });
 
 // Select a product type then generate them accordingly
@@ -536,8 +531,13 @@ function populateSection(sectionId, items) {
                         <h5 class="card-title">${title}</h5>
                         <p class="card-text">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
                         <div class="card-footer pt-3 pb-2">
-                            <button type='button' class='btn btn-primary shadow-0 me-1 buy' onclick='addtocart(${id})'><i class='fa fa-cart-plus'></i> Add to Cart</button>
-                            <button type='button' class='btn btn-primary shadow-0 me-1' onclick='seeMore(${id})'><i class='fa fa-eye'></i></button>
+                            <button type='button' class='btn btn-primary shadow-0 me-1 buy' onclick='addToCart(${id})'>
+                                <i class='fa fa-cart-plus'></i>
+                                <span class="d-none d-xl-inline"> Add to Cart</span>
+                            </button>
+                            <button type='button' class='btn btn-primary shadow-0 me-1' onclick='seeMore(${id})'>
+                                <i class='fa fa-eye'></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -604,7 +604,7 @@ function getRandomItems(array, count) {
 
 
 // Cart system
-var cart=[];
+var cart = [];
 
 // Load cart data
 function loadCart() {
@@ -613,7 +613,6 @@ function loadCart() {
         cart = JSON.parse(storedCart);
     }
     displayCart();
-    displayCheckout();
 }
 
 // Save cart data locally
@@ -622,42 +621,81 @@ function saveCart() {
 }
 
 // Add product data to cart
-function addtocart(a) {
-    cart.push({...categories[a]});
-    saveCart();
-    displayCart();
+function addToCart(id) {
+    const itemSelected = product.find(p => p.id === id);
+    if (product) {
+        const item = cart.find(cartItem => cartItem.id === itemSelected.id);
+        if (item) {
+            item.quantity += 1;
+        } else {
+            cart.push({...itemSelected, quantity: 1});
+        }
+        saveCart();
+        displayCart();
+    }
+}
+
+// Update quantity of an item
+function updateQuantity(index, newQuantity) {
+    if (newQuantity >= 0) {
+        cart[index].quantity = parseInt(newQuantity);
+        if (cart[index].quantity === 0) {
+            cart.splice(index, 1);
+        }
+        saveCart();
+        displayCart();
+    }
 }
 
 // Display and generate products from cart data
-function displayCart(){
+function displayCart() {
     let total = 0;
-
-    // If you have 0 item in the cart
-    if (cart.length==0) {
-        document.getElementById('cart').innerHTML = "Your cart is empty :(";
+  
+    // If you have 0 items in the cart
+    if (cart.length == 0) {
+      document.getElementById('cart').innerHTML = "Your cart is empty :(";
+    } else {
+      document.getElementById('cart').innerHTML = cart.map((item, index) => {
+        // Add up every item prices to total amount
+        total += item.price * item.quantity;
+        var {image, title, price, quantity} = item;
+  
+        return (
+            `<div class="row mb-4 g-0 align-items-center">
+              <div class="col-md-2">
+                <img src="${image}" class="img-fluid" alt="" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="col-md-4 col-lg-4 col-xl-4">
+                <h6 class="text-black mb-0">${title}</h6>
+              </div>
+              <div class="col-md-3 d-flex align-items-center">
+                <button class="btn btn-link px-2" onclick="updateQuantity(${index}, ${quantity - 1})">
+                  <i class="fas fa-minus"></i>
+                </button>
+          
+                <input min="0" name="quantity" value="${quantity}" type="number" class="form-control form-control-sm m-1" style="width: 40px;" onchange="updateQuantity(${index}, this.value)" />
+          
+                <button class="btn btn-link px-2" onclick="updateQuantity(${index}, ${quantity + 1})">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div class="col-md-2 align-items-center">
+                <p class="mb-0 ms-1">₱${(price * quantity).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
+              </div>
+            </div>`
+          );
+      }).join('');
     }
+    // Display the total amount
+    document.getElementById('total').innerHTML = `₱${total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
 
-    // If you have items in the cart
-    else {
-        document.getElementById('cart').innerHTML = cart.map((item) =>
-        {
-            // Add up every item prices to total amount
-            total += item.price;
-            var {image, title, price} = item;
-
-            return (
-                `<div class="row">
-                    <div class="col-sm-3"><img style="width: 100px; aspect-ratio: 1 / 1;" src="${image}" alt=""></div>
-                    <div class="col-sm-6"><h4>${title}</h4></div>
-                    <div class="col-sm-3"><p>₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p></div>
-                </div>`
-            );
-            
-        }).join('');
-    }
-    // Update total price
-    document.getElementById('total').innerHTML = "₱" + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    displayCheckout();
 }
+
+// Call loadCart to initialize the cart on page load
+loadCart();
+
+
 
 function displayCheckout(){
     let total = 0;
@@ -673,15 +711,15 @@ function displayCheckout(){
         {
             // Add up every item prices to total amount
             total += item.price;
-            var {image, title, price} = item;
+            var {image, title, price, quantity} = item;
 
             return (
                 `<li class="list-group-item d-flex justify-content-between lh-condensed">
                     <div class="d-flex">
                         <img class="img-responsive" style="width: 100px; aspect-ratio: 1 / 1;" src="${image}" alt=""></div>
-                        <h6 class="my-0">${title}</h6>
+                        <h6 class="my-0">${title} ${quantity}</h6>
                     </div>
-                    <span class="text-muted">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</span>
+                    <span class="text-muted">₱${(price * quantity).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</span>
                 </li>`
             );
             
