@@ -717,19 +717,22 @@ function displayCheckout(){
             var {image, title, price, quantity} = item;
 
             return (
-                `<li class="list-group-item d-flex justify-content-between lh-condensed">
-                    <div class="d-flex">
-                        <img class="img-responsive" style="width: 100px; aspect-ratio: 1 / 1;" src="${image}" alt=""></div>
-                        <h6 class="my-0">${title} ${quantity}</h6>
+                `
+                <li class="list-group-item d-flex align-items-center">
+                    <img src="${image}" class="rounded-3 img-fluid img-thumbnail" style="max-width: 100px; height: auto;" alt="${title}">
+                    <div class="ms-3">
+                        <h6 class="my-0">${title}</h6>
+                        <small class="text-muted">Quantity: ${quantity}</small>
                     </div>
-                    <span class="text-muted">₱${(price * quantity).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</span>
-                </li>`
+                    <span class="ms-auto text-muted">₱${(price * quantity).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</span>
+                </li>
+                `
             );
             
         }).join('');
     }
     // Update total price
-    document.getElementById('total').innerHTML = "₱" + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    document.getElementById('checkout-total').innerHTML = "₱" + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
 
 
@@ -753,4 +756,8 @@ function purchaseItems(event) {
     console.log("hi")
     event.preventDefault();
     $('#purchased').modal('show');
-}
+    // Clear the form
+    $('form')[0].reset();
+    // Clear the cart
+    localStorage.removeItem('cart');
+  }
