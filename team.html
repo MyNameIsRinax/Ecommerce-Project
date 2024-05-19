@@ -13,7 +13,8 @@
     <script src="https://kit.fontawesome.com/ecd69ea904.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
 </head>
-<header>
+<body>
+  <header>
     <!-- Jumbotron -->
     <div class="text-center bg-white border-bottom">
       <div class="container">
@@ -55,8 +56,8 @@
         </div>
       </div>
     </div>
-  </header>    
-<body>
+  </header>
+
   <!-- image header -->
   <img src="img/header/team.png" style="width: 100%;">
   <!-- end of image header -->
@@ -197,33 +198,34 @@
     </div>
     <!-- Copyright -->
   </footer>
-<!-- Footer -->
+  <!-- Footer -->
 
-<!-- Cart Modal -->
-<div class="modal fade" id="addToCart">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
+  <!-- Cart Modal -->
+  <div class="modal fade" id="addToCart">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">My Cart</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">My Cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body" id="cart">
+          Your cart is empty :( 
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <b>Total: </b><p id="total">₱0.00</p>
+            <button type="button" class="btn btn-success text-nowrap" onclick="window.location='checkout.html';">Checkout</button>
+        </div>
+
       </div>
-
-      <!-- Modal body -->
-      <div class="modal-body" id="cart">
-        Your cart is empty :( 
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-          <b>Total: </b><p id="total">₱0.00</p>
-          <button type="button" class="btn btn-success text-nowrap" onclick="window.location='checkout.html';">Checkout</button>
-      </div>
-
     </div>
   </div>
-</div>
+  
   <!-- Scripts -->
   <script src="js/Core.js"></script>
   <script src="js/Alert.js"></script>

@@ -14,53 +14,59 @@
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
 </head>
 <body>
-    <div class="alert alert-success">
-      <strong>Success!</strong> Item added to cart!
+  <!-- Toast Notifications -->
+  <div class="position-fixed top-0 start-50 translate-middle-x m-3" style="z-index: 11">
+    <div id="cartToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body bg-success text-white">
+        Item has been added to your cart.
+        <button type="button" class="btn-close float-end" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
     </div>
+  </div>
 
-    <header>
-      <!-- Jumbotron -->
-      <div class="text-center bg-white border-bottom">
-        <div class="container">
-          <div class="row gy-3 align-items-center">
-            <!-- Left elements -->
-            <div class="col-lg-2 col-sm-4 col-4">
-              <a href="index.html" target="_blank" class="float-start">
-                <img src="img/logo.png" height="100px" />
-              </a>
-            </div>
-            <!-- Left elements -->
-    
-            <!-- Center elements -->
-            <div class="col-lg-8 col-sm-4 col-4 d-flex justify-content-center align-items-center">
-              <nav class="navbar navbar-expand-md navbar-light">
-                <!-- Navbar content -->
-                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="product.html">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="team.html">Team</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <!-- Center elements -->
-    
-            <!-- Right elements -->
-            <div class="col-lg-2 col-sm-4 col-4">
-              <div class="d-flex justify-content-end align-items-center">
-                <a href="#" class="bg-primary text-white me-1 border rounded py-2 px-4 nav-link d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addToCart" style="white-space: nowrap;"> <i class="fa fa-shopping-cart me-md-2"></i><p class="d-none d-md-block mb-0">My cart</p> </a>
-              </div>
-            </div>
-            <!-- Right elements -->
+  <header>
+    <!-- Jumbotron -->
+    <div class="text-center bg-white border-bottom">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <!-- Left elements -->
+          <div class="col-lg-2 col-sm-4 col-4">
+            <a href="index.html" target="_blank" class="float-start">
+              <img src="img/logo.png" height="100px" />
+            </a>
           </div>
+          <!-- Left elements -->
+  
+          <!-- Center elements -->
+          <div class="col-lg-8 col-sm-4 col-4 d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <!-- Navbar content -->
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Team</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Center elements -->
+  
+          <!-- Right elements -->
+          <div class="col-lg-2 col-sm-4 col-4">
+            <div class="d-flex justify-content-end align-items-center">
+              <a href="#" class="bg-primary text-white me-1 border rounded py-2 px-4 nav-link d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addToCart" style="white-space: nowrap;"> <i class="fa fa-shopping-cart me-md-2"></i><p class="d-none d-md-block mb-0">My cart</p> </a>
+            </div>
+          </div>
+          <!-- Right elements -->
         </div>
       </div>
-    </header>    
+    </div>
+  </header>
         
     <!-- Carousel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -133,70 +139,70 @@
   </div>
 
 
-<!-- Footer -->
-<footer class="p-1 text-lg-start bg-body-tertiary text-muted">
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <img src="img/logo.png" height="150px" style="padding: 10px;" />
-          <p>
-            AUZA is where you get your game on.
-          </p>
-        </div>
-        <!-- Grid column -->
+  <!-- Footer -->
+  <footer class="p-1 text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img src="img/logo.png" height="150px" style="padding: 10px;" />
+            <p>
+              AUZA is where you get your game on.
+            </p>
+          </div>
+          <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="product.html?category=laptop" class="text-reset">Laptops</a>
-          </p>
-          <p>
-            <a href="product.html?category=desktop" class="text-reset">Desktops</a>
-          </p>
-          <p>
-            <a href="product.html?category=monitor" class="text-reset">Monitors</a>
-          </p>
-        </div>
-        <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="product.html?category=laptop" class="text-reset">Laptops</a>
+            </p>
+            <p>
+              <a href="product.html?category=desktop" class="text-reset">Desktops</a>
+            </p>
+            <p>
+              <a href="product.html?category=monitor" class="text-reset">Monitors</a>
+            </p>
+          </div>
+          <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> Ozamiz City</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            sales@auzapc.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> +63 (917) 864-6316 (Globe)</p>
-          <p><i class="fas fa-phone me-3"></i> +63 (2) 7502-8501 (Landline) </p>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Ozamiz City</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              sales@auzapc.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +63 (917) 864-6316 (Globe)</p>
+            <p><i class="fas fa-phone me-3"></i> +63 (2) 7502-8501 (Landline) </p>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Grid column -->
+        <!-- Grid row -->
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
+    </section>
+    <!-- Section: Links  -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4">
-    © 2024 Copyright:
-    <a class="text-reset fw-bold" href="">Auza PC Store
-      
-    </a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+    <!-- Copyright -->
+    <div class="text-center p-4">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="">Auza PC Store
+        
+      </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
 
 

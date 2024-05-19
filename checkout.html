@@ -12,8 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ecd69ea904.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
-</head>
-<header>
+</head> 
+<body>
+  <header>
     <!-- Jumbotron -->
     <div class="text-center bg-white border-bottom">
       <div class="container">
@@ -55,8 +56,8 @@
         </div>
       </div>
     </div>
-  </header>    
-<body>
+  </header>
+
   <!-- Checkout -->
   <div class="my-5 container">
     <div class="row">
@@ -131,113 +132,113 @@
     </div>
   </div>
 
-<!-- Footer -->
-<footer class="p-1 text-lg-start bg-body-tertiary text-muted">
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <img src="img/logo.png" height="150px" style="padding: 10px;" />
-          <p>
-            AUZA is where you get your game on.
-          </p>
-        </div>
-        <!-- Grid column -->
+  <!-- Footer -->
+  <footer class="p-1 text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img src="img/logo.png" height="150px" style="padding: 10px;" />
+            <p>
+              AUZA is where you get your game on.
+            </p>
+          </div>
+          <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="product.html?category=laptop" class="text-reset">Laptops</a>
-          </p>
-          <p>
-            <a href="product.html?category=desktop" class="text-reset">Desktops</a>
-          </p>
-          <p>
-            <a href="product.html?category=monitor" class="text-reset">Monitors</a>
-          </p>
-        </div>
-        <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="product.html?category=laptop" class="text-reset">Laptops</a>
+            </p>
+            <p>
+              <a href="product.html?category=desktop" class="text-reset">Desktops</a>
+            </p>
+            <p>
+              <a href="product.html?category=monitor" class="text-reset">Monitors</a>
+            </p>
+          </div>
+          <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> Ozamiz City</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            sales@auzapc.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> +63 (917) 864-6316 (Globe)</p>
-          <p><i class="fas fa-phone me-3"></i> +63 (2) 7502-8501 (Landline) </p>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Ozamiz City</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              sales@auzapc.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +63 (917) 864-6316 (Globe)</p>
+            <p><i class="fas fa-phone me-3"></i> +63 (2) 7502-8501 (Landline) </p>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Grid column -->
+        <!-- Grid row -->
       </div>
-      <!-- Grid row -->
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="">Auza PC Store
+        
+      </a>
     </div>
-  </section>
-  <!-- Section: Links  -->
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4">
-    © 2024 Copyright:
-    <a class="text-reset fw-bold" href="">Auza PC Store
-      
-    </a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+  <!-- Cart Modal -->
+  <div class="modal fade" id="addToCart">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
 
-<!-- Cart Modal -->
-<div class="modal fade" id="addToCart">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">My Cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">My Cart</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
+        <!-- Modal body -->
+        <div class="modal-body" id="cart">
+          Your cart is empty :( 
+        </div>
 
-      <!-- Modal body -->
-      <div class="modal-body" id="cart">
-        Your cart is empty :( 
-      </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <b>Total: </b><p id="total">₱0.00</p>
+            <button type="button" class="btn btn-success text-nowrap" href="checkout.html">Checkout</button>
+        </div>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-          <b>Total: </b><p id="total">₱0.00</p>
-          <button type="button" class="btn btn-success text-nowrap" href="checkout.html">Checkout</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Checkout Successfully Modal -->
-<div class="modal fade" id="purchased">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body text-center p-5">
-        <i class="fas fa-check fa-5x text-success mb-4"></i>
-        <h5 class="mb-3">Successfully Checkout</h5>
-        <p class="mb-4">Thank you. Your purchase was successful.</p>
-        <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="location.reload()">Continue</button>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Scripts -->
-<script src="js/Core.js"></script>
-<script src="js/Alert.js"></script>
+  <!-- Checkout Successfully Modal -->
+  <div class="modal fade" id="purchased">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center p-5">
+          <i class="fas fa-check fa-5x text-success mb-4"></i>
+          <h5 class="mb-3">Successfully Checkout</h5>
+          <p class="mb-4">Thank you. Your purchase was successful.</p>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="location.reload()">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/Core.js"></script>
+  <script src="js/Alert.js"></script>
 </body>
 </html>
