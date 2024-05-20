@@ -492,6 +492,61 @@ const product = [
         Refresh Rate (Max) : 540Hz
         HDR (High Dynamic Range) Support : HDR10`,
         price: 61495,
+    },
+    {
+        id: 33,
+        image: 'img/products/34.jpg',
+        title: 'Nitro RG0',
+        brand: 'acer',
+        category: 'monitor',
+        description: 
+        `Display Size: 23.8 inches
+        Resolution: Full HD (1920 x 1080 pixels)
+        Panel Type: IPS (In-Plane Switching) technology for better color accuracy and wider viewing angles
+        Refresh Rate: 75Hz, providing smoother motion for gaming and video playback
+        Response Time: 1ms Visual Response Boost (VRB), which reduces motion blur`,
+        price:  9999,
+    },
+    {
+        id: 34,
+        image: 'img/products/p35.jpg',
+        title: 'TUF Gaming VG27VQ3B',
+        brand: 'asus',
+        category: 'monitor',
+        description: 
+        `Panel Size (inch) : 27
+        Display Viewing Area (H x V) : 597.888 x 336.312 mm
+        Backlight Type : LED
+        Viewing Angle (CR≧10, H/V) : 178°/ 178°
+        Curvature : 1500R
+        Pixel Pitch : 0.311mm
+        Resolution : 1920x1080
+        Color Space (DCI-P3) : 90%
+        Brightness (Typ.) : 250cd/㎡
+        Contrast Ratio (Typ.) : 3000:1
+        Display Colors : 16.7M
+        Response Time : 1ms(GTG)
+        Refresh Rate (Max) : 180Hz`,
+        price:  15635,
+    },
+    {
+        id: 35,
+        image: 'img/products/p36.jpg',
+        title: 'G272QPF E2',
+        brand: 'msi',
+        category: 'monitor',
+        description: 
+        `Display Size: 27 inches
+        Panel Type: IPS (In-Plane Switching)
+        Resolution: 2560 x 1440 (QHD)
+        Refresh Rate: Up to 170 Hz
+        Response Time: 0.5 ms (Gray to Gray)
+        Aspect Ratio: 16:9
+        Brightness: 400 nits (typical)
+        Contrast Ratio: 1000:1 (typical)
+        Color Gamut: Covers 95% of the DCI-P3 color space
+        HDR Support: Yes, VESA DisplayHDR 400`,
+        price:  18395,
     }
 ];
 
