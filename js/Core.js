@@ -554,7 +554,6 @@ const categories = [...new Set(product.map((item) => item))];
 
 $(document).ready(function () {
     populateProducts();
-    filterProducts();
     $('#priceOption, #brandOption, #categoryOption').on('change', filterProducts);
 });
 
@@ -746,7 +745,9 @@ function displayCart() {
     // Display the total amount
     document.getElementById('total').innerHTML = `₱${total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
 
-    displayCheckout();
+    // If the current page is Checkout
+    // then display the checkout items
+    if ($('.checkout').length) {displayCheckout();}
 }
 
 // Call loadCart to initialize the cart on page load
