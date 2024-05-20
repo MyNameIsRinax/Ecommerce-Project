@@ -531,14 +531,14 @@ function populateSection(sectionId, items) {
                     <img src="${image}" class="card-img-top" style="aspect-ratio: 1 / 1" alt="${title}" />
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">${title}</h5>
-                        <p class="card-text">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
-                        <div class="card-footer pt-3 pb-2">
-                            <button type='button' class='btn btn-primary shadow-0 me-1 buy' onclick='addToCart(${id})'>
+                        <h5 class="card-title mb-1">${title}</h5>
+                        <p class="card-text mb-2">₱${price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</p>
+                        <div class="card-footer p-0">
+                            <button type='button' class='btn btn-primary shadow-0 me-1 my-2 buy' onclick='addToCart(${id})'>
                                 <i class='fa fa-cart-plus'></i>
                                 <span class="d-none d-xl-inline"> Add to Cart</span>
                             </button>
-                            <button type='button' class='btn btn-primary shadow-0 me-1' onclick='seeMore(${id})'>
+                            <button type='button' class='btn btn-primary shadow-0 me-1 my-2' onclick='seeMore(${id})'>
                                 <i class='fa fa-eye'></i>
                             </button>
                         </div>
@@ -604,7 +604,6 @@ function getRandomItems(array, count) {
     const shuffled = array.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
 }
-
 
 // Cart system
 var cart = [];
@@ -697,8 +696,6 @@ function displayCart() {
 
 // Call loadCart to initialize the cart on page load
 loadCart();
-
-
 
 function displayCheckout(){
     let total = 0;
