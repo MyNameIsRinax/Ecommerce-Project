@@ -787,8 +787,7 @@ function displayCheckout(){
     document.getElementById('checkout-total').innerHTML = "₱" + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
 
-
-
+// Products - See More Modal
 function seeMore(id) {
     // Show the modal
     $('#seeMore').modal('show');
@@ -804,8 +803,8 @@ function seeMore(id) {
         "No description available.";
 }
 
+// Checkout - Form Submission
 function purchaseItems(event) {
-    console.log("hi")
     event.preventDefault();
     $('#purchased').modal('show');
     // Clear the form
@@ -813,3 +812,20 @@ function purchaseItems(event) {
     // Clear the cart
     localStorage.removeItem('cart');
   }
+
+
+// Checkout - Payment Methods
+const paymentMethods = document.getElementsByName("paymentMethod");
+const cardDetails = document.getElementById('cardDetails');
+const cardFields = document.querySelectorAll('#cardDetails input');
+
+paymentMethods.forEach(method => {
+  method.addEventListener('change', () => {
+    const isCard = method.id === 'credit' || method.id === 'debit';
+    cardDetails.style.display = isCard ? 'block' : 'none';
+    cardFields.forEach(field => {
+      field.disabled = !isCard;
+      field.required = isCard;
+    });
+  });
+});

@@ -64,7 +64,7 @@
       <div class="col mx-3">
         <!-- Form -->
         <form onsubmit="purchaseItems(event)">
-          <h4 class="mb-1">Your Information</h4>
+          <h4>Your Information</h4>
           <div class="row py-2">
               <div class="col">
                   <input type="text" class="form-control" id="first" placeholder="First Name" required>
@@ -91,9 +91,10 @@
           </div>
           <hr>
           <!-- Payment Method -->
-          <div class="row mt-2 py-2">
+          <div class="row">
               <h4>Payment Methods</h4>
-              <div class="custom-control custom-radio">
+              <div class="py-1">
+                <div class="custom-control custom-radio">
                   <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
                   <label class="custom-control-label" for="credit">Credit Card</label>
               </div>
@@ -109,12 +110,30 @@
                   <input id="gcash" name="paymentMethod" type="radio" class="custom-control-input" required>
                   <label class="custom-control-label" for="gcash">GCash</label>
               </div>
+              </div>
           </div>
           <hr>
+          <div id="cardDetails" style="display: block;">
+            <div class="row">
+              <h4>Card Details</h4>
+              <div class="col">
+                <input type="text" class="form-control" id="cardNumber" placeholder="Card Number" required>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col">
+                <input type="text" class="form-control" id="cardExpiry" placeholder="Expiration Date" required>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="cardCVV" placeholder="CVV" required>
+              </div>
+            </div>
+            <hr>
+          </div>
           <!-- Pay Order -->
           <button type="submit" class="my-2 btn btn-primary">Pay Order</button>
           <div>
-              <small class="text-muted">By clicking "Pay Order" I confirm I have read <a href="">Privacy Notice</a> and <a href="">Cookie Notice</a>. I agree to the terms & conditions of the store. "I also accept that the store will process my personal data to manage my order, in accordance with the store's privacy notice"</small>
+              <small class="text-muted">By clicking "Pay Order" I confirm I have read <a href="#">Privacy Notice</a> and <a href="#">Cookie Notice</a>. I agree to the <a href="#">Terms & Conditions</a> of the store. "I also accept that the store will process my personal data to manage my order, in accordance with the store's privacy notice"</small>
           </div>
         </form>
       </div>
