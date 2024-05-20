@@ -710,7 +710,7 @@ function displayCheckout(){
         document.getElementById('checkout').innerHTML = cart.map((item) =>
         {
             // Add up every item prices to total amount
-            total += item.price;
+            total += item.price * item.quantity;
             var {image, title, price, quantity} = item;
 
             return (
