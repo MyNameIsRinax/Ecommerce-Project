@@ -12,6 +12,6 @@ For academic purposes. This is our project as requirement of Web Technologies.
 
 - [@MyNameIsRinax](https://www.github.com/mynameisrinax)
 - [@ryohann](https://www.github.com/ryohann)
-- [@albidawan](https://www.github.com/ryohann)
+- [@albidawan](https://www.github.com/albidawan)
 - [@Venntot](https://www.github.com/Venntot)
 
