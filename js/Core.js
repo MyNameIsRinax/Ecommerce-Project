@@ -554,6 +554,7 @@ const categories = [...new Set(product.map((item) => item))];
 
 $(document).ready(function () {
     populateProducts();
+    filterProducts();
     $('#priceOption, #brandOption, #categoryOption').on('change', filterProducts);
 });
 
